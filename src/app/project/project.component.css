@@ -1,0 +1,6 @@
+#Projects {
+  min-width: 60vw;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: flex-start;
+}

@@ -1,0 +1,14 @@
+#About{
+  text-align: center;
+}
+
+h4{
+  font-family: 'Roboto Mono';
+  font-size: 15px;
+  background-color: var(--tri);
+  border-radius: 10px;
+  padding: 10px;
+  /* height: 80px; */
+  border-bottom:  3px solid var(--prim);
+  border-right: 3px solid var(--prim);
+}

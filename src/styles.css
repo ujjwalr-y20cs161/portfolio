@@ -1,1 +1,273 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&&family=Roboto+Mono&display=swap');
+
+/* Insert Your COLOR here papa */
+:root {
+  --prim: cyan;
+  --sec: #20262E;
+  --tri: #0c0f12;
+  --text: white;
+  --prim2: lightseagreen;
+  /* --prim:navy;
+    --sec:whitesmoke;
+    --tri:wheat;
+    --text:black; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Don't Touch these -------------------------------------*/
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--prim) #283139;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #283139;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--prim);
+  border-radius: 2px;
+  border: 0px solid #ffffff;
+}
+
+/* ---------------------------------------------- */
+body {
+  max-width: 100vw;
+  font-family: Hanken Grotesk;
+  color: var(--text);
+  background-color: var(--sec);
+}
+
+
+header {
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  margin-left: 0;
+  background-color: var(--tri);
+  color: var(--prim);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border-right: solid 1px white; */
+}
+
+.perpic {
+  /* background-color: black; */
+  /* border-radius: 100%; */
+  /* aspect-ratio: 1; */
+  /* outline: 3px solid var(--prim); */
+  font-weight: 600;
+}
+
+.person {
+  height: 45vh;
+  display: flex;
+  /* font-family: 'Roboto Mono'; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.person>* {
+  padding: 5px 0px;
+}
+
+.person>h2 {
+  font-size: 30px;
+}
+
+nav {
+  height: 40vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.links:hover,
+.links:focus {
+  background-color: none;
+  transition: 0.7ms;
+  outline: solid 2px var(--prim);
+  /* background-color: var(--prim); */
+  color: var(--prim);
+}
+
+.links {
+  /* background-color: teal; */
+  outline: none;
+  /* background-color: white; */
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  background-color: var(--sec);
+  width: 75vw;
+  margin-left: auto;
+}
+
+.spec {
+  color: var(--prim);
+}
+
+.cent {
+  width: 60vw;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+section>* {
+  padding: 15px 0px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.Big {
+  font-size: 50px;
+}
+
+.contBig {
+  display: flex;
+}
+
+.cont {
+  width: 18vw;
+  margin: 10px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  /* outline: 4px solid var(--prim2); */
+  /* box-shadow: 0px 20px 40px -10px cyan; */
+
+}
+
+.hype {
+  text-decoration: none;
+}
+
+.hype:hover,
+.hype:focus {
+  transition: 0.8s;
+  text-decoration: underline;
+  color: lightseagreen;
+}
+
+.iconn {
+  filter : blur(5px);
+  border-radius: 100%;
+  font-size: 45px;
+  font-weight: 900;
+  background-color: none;
+  color: var(--prim);
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconn:hover,
+.iconn:focus,.iconn:out-of-range{
+  transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  filter: none;
+  box-shadow: none;
+}
+
+.contact>img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--prim);
+
+}
+
+.contact {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exp {
+  background-color: var(--tri);
+}
+
+.cent{
+      min-width: 60vw;
+      min-height: 100vh;
+      margin: auto;
+      display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100vw;
+    /* height: 40vh; */
+    position:relative;
+      background-color: var(--tri);
+      color: var(--prim);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      /* border-right: solid 1px white; */
+    }
+
+
+  main{
+    max-width: 100vw;
+  }
+
+  .contBig{
+    flex-direction: column;
+  }
+  .cont{
+    width: 70vw;
+  }
+
+
+}

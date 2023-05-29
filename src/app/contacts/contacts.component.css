@@ -1,3 +1,39 @@
 #Contacts{
   align-items: center;
+  background-color: black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 60vw;
+  width:75vw;
+}
+
+.img1{
+  height: 100px;
+}
+.img2{
+  height: 80px;
+}
+.bar>img{
+  filter:brightness(0.5);
+}
+.bar>img:hover{
+  transition: all 0.5s ease ;
+  filter:brightness(1) saturate(1.2);
+}
+
+.bar{
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+}
+
+@media only screen and (max-width : 600px){
+#Contacts{
+  width: 100vw;
+}
+
 }

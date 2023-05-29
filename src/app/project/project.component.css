@@ -1,6 +1,42 @@
-#Projects {
+#Projects{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  align-items: center;
   min-width: 60vw;
   min-height: 100vh;
-  margin: 0;
-  justify-content: flex-start;
+  margin: auto;
+}
+
+#side-proj {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card{
+  min-width: 25vw;
+  min-height: 35vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+.card:hover,.card:focus{
+  background-color: var(--tri);
+  color: var(--tri);
+  /* transition: all 0.6s ease; */
+
+}
+
+@media only screen and (max-width: 800px) {
+  #Projects{
+    flex-direction: column;
+  }
+  .card{
+    width: 60vw !important;
+  }
 }

@@ -2,10 +2,11 @@
 
 /* Insert Your COLOR here papa */
 :root {
-  --prim: aqua;
+  --prim: #ECC5FB;
   --sec: #20262E;
   --tri: #0c0f12;
   --text: white;
+  --foot: black;
   --prim2: lightseagreen;
   /* --prim:navy;
     --sec:whitesmoke;
@@ -18,8 +19,12 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* outline : 2px solid white; */
 }
 
+*:hover{
+  transition: all 0.6s ease;
+}
 /* Don't Touch these -------------------------------------*/
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -51,19 +56,28 @@ body {
   background-color: var(--sec);
 }
 
+.headings{
+  text-align: center;
+  text-decoration: underline;
+}
 
 header {
   position: fixed;
-  height: 100vh;
+  max-height: 100vh;
   width: 25vw;
   margin-left: 0;
   background-color: var(--tri);
   color: var(--prim);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   /* border-right: solid 1px white; */
+}
+
+header>* {
+  /* background-color: wheat; */
+  margin: 20px !important;
 }
 
 .perpic {
@@ -75,7 +89,7 @@ header {
 }
 
 .person {
-  height: 45vh;
+  min-height: 30vh;
   display: flex;
   /* font-family: 'Roboto Mono'; */
   flex-direction: column;
@@ -87,14 +101,9 @@ header {
   padding: 5px 0px;
 }
 
-.person>h2 {
-  font-size: 30px;
-}
-
 nav {
-  height: 40vh;
+  min-height: 50vh;
   display: flex;
-
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -119,8 +128,9 @@ li {
   /* background-color: white; */
   color: var(--text);
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px;
   width: 200px;
+
   border-radius: 25px;
   text-align: center;
 }
@@ -141,13 +151,13 @@ main {
 }
 
 .cent {
-  width: 60vw;
+  width: 65vw;
   min-height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  min-width: 60vw;
 }
 
 section>* {
@@ -177,9 +187,14 @@ h1 {
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+  padding: 5px !important;
+
   /* outline: 4px solid var(--prim2); */
   /* box-shadow: 0px 20px 40px -10px cyan; */
 
+}
+.profile:hover{
+    outline: 2px solid var(--prim);
 }
 
 .hype {
@@ -194,13 +209,8 @@ h1 {
 }
 
 .iconn {
-  filter : blur(5px);
+  filter : brightness(0.8);
   border-radius: 100%;
-  font-size: 45px;
-  font-weight: 900;
-  background-color: none;
-  color: var(--prim);
-  padding: 15px;
   width: 100px;
   height: 100px;
   display: flex;
@@ -212,7 +222,7 @@ h1 {
 .iconn:focus,.iconn:out-of-range{
   transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   filter: none;
-  box-shadow: none;
+
 }
 
 .contact>img {
@@ -236,25 +246,25 @@ h1 {
   background-color: var(--tri);
 }
 
-.cent{
-      min-width: 60vw;
-      min-height: 100vh;
-      margin: auto;
-      display: flex;
-}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
+
+  h1,h2,h3,h4,p,a,.spec,li{
+    font-size: large !important;
+  }
   header {
     width: 100vw;
     /* height: 40vh; */
+    max-height: 100vh ;
     position:relative;
-      background-color: var(--tri);
-      color: var(--prim);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      /* border-right: solid 1px white; */
+    background-color: var(--tri);
+    color: var(--prim);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border-right: solid 1px white; */
     }
 
 
@@ -269,6 +279,9 @@ h1 {
     width: 70vw;
   }
 
+  *{
+    font-size: small !important;
+  }
 
 }
 

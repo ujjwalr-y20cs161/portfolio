@@ -2,6 +2,9 @@ main {
   background-color: var(--sec);
   width: 75vw;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .spec {

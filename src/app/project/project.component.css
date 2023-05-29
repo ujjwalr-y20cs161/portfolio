@@ -8,11 +8,14 @@
   margin: auto;
 }
 
-#side-proj {
+.side-proj {
   display: flex;
+  flex-direction: column;
   padding: 20px;
-  align-items: center;
+  align-items:start;
   justify-content: space-evenly;
+  min-height: 100vh;
+  /* outline: 2px solid pink; */
 }
 
 .card{

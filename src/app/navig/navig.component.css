@@ -19,7 +19,7 @@
 header{
   padding: 0;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .profile{
@@ -36,3 +36,8 @@ header{
   height: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+  header{
+    max-height: 90vh !important;
+  }
+}

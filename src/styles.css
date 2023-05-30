@@ -115,12 +115,13 @@ li {
 }
 
 .links:hover,
-.links:focus {
+.links:focus,a:focus {
   background-color: none;
   transition: 0.7ms;
   outline: solid 2px var(--prim);
   /* background-color: var(--prim); */
   color: var(--prim);
+  box-shadow: 0px 5px 30px -5px black;
 }
 
 .links {
@@ -264,11 +265,15 @@ h1 {
   justify-content: center;
   /* text-align: center; */
   align-items: center;
-  background-color: var(--prim);
+  background-color: var(--foot);
+  color: var(--prim);
+  outline: 2px solid var(--prim);
+  box-shadow: 0px 0px 70px 10px var(--foot);
 }
 
 #upd:hover {
   box-shadow: 0px 0px 15px -5px var(--prim);
+
 }
 
 

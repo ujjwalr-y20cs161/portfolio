@@ -32,7 +32,7 @@ header{
   /* background-color: aliceblue; */
 }
 
-bit{
-  height: 10px;
-  aspect-ratio: 1;
+.bit{
+  height: 20px;
 }
+
